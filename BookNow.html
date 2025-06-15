@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Book Now</title>
+    <link rel="stylesheet" href="/CSS/BookNow.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav"> <a href="/HTML/HomeCeledon.html">HOME</a></li>
+            <li class="nav"> <a href="AboutUs.html">ABOUT US</a></li>
+            <li class="nav"> <a href="/HTML/MenuCeladon.html">MENU</a></li>
+            <li class="nav"> <a href="TheTeam.html">THE TEAM</a></li>
+            <li class="nav"> <a href="BookNow.html">BOOK NOW</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <div id="booknow">
+        <h1>How to Reserve</h1>
+        <p>
+            Here at the Celadon Diner, we have two ways to reserve a table.
+            The first is our old tradition of simply walking in and reserving
+            a time. We always save tables for walk-in guests, so feel free to
+            drop on by.
+        </p>
+
+        <p>
+            Our second method is through our online form. If you fill out the
+            form below, or personally email us, we have staff behind the scenes
+            who will get your reservation booked. Online reservations must be made
+            1 day in advance, as to give our staff time to prepare the best experience
+            for you and your Pokemon. Thank you for your patience. We hope to see you soon.
+        </p>
+    </div>
+
+
+    <div>
+        <form action="index.php" method="POST">
+            <label for="firstname"></label>
+            <input type="text" id="firstname" placeholder="First Name" required />
+
+            <label for="lastname"></label>
+            <input type="text" id="lastname" placeholder="Last Name" required />
+            <br />
+
+            <label for="phone"></label>
+            <input type="tel" id="phone" placeholder="Phone Number(123-456-7890)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email Address" required /><br />
+
+            <label for="quanH"></label>
+            <input type="number" id="quan" placeholder="Guest(s)" min="1" max="7" required />
+
+            <label for="quanP"></label>
+            <textarea id="comment" rows="3" cols="25"
+                      placeholder="Please tell about your Pokemon and who will be joining us for food."></textarea>
+
+            <br />
+
+            <input type="submit" value="Complete Reservation" />
+        </form>
+
+    </div>
+
+
+
+    <footer>
+
+        <aside>
+            <h1>ADDRESS</h1>
+            <p>Kanto</p>
+            <p>Celadon City</p>
+            <p>Celadon Department Store</p>
+        </aside>
+
+        <article>
+            <h1>CONTACT US</h1>
+            <p>Inquires: 123-456-7890</p>
+            <p>Email: TheCeladonDiner@kanto.com</p>
+            <p>Fax#: 012-345-6789</p>
+
+        </article>
+
+        <section>
+            <h1>HOURS</h1>
+            <p>M-F: 18:00-00:00</p>
+            <p>Sat: CLOSED</p>
+            <p>Sun: 00:00-23:59</p>
+        </section>
+    </footer>
+</body>
+</html>

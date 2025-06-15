@@ -1,0 +1,73 @@
+﻿.navbar li {
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.nav a {
+    font-family: 'Franklin Gothic';
+    color: black;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(158, 100%, 32%);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: hsl(158, 100%, 32%);
+    inline-size: auto;
+    box-shadow: 5px 5px 9px black;
+    overflow: hidden;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+aside{
+    float: left;
+    width: 33%;
+}
+#headchef{
+    width: 33%;
+}
+
+section {
+    float: left;
+    width: 34%;
+}
+#chefmale {
+    width: 33%;
+}
+
+article {
+    float: left;
+    width: 33%;
+}
+#cheffemale {
+    width: 33%;
+}
+#pika {
+    float: left;
+    width: 50%;
+}
+#snor {
+    float: left;
+    width: 50%;
+}
+#pikachu{
+    width: 50%;
+}
+#snorlaz{
+    width: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .navbar li {
+        display: inline-block;
+        font-size: 1em;
+        padding: 0px;
+    }
